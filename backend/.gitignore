@@ -1,0 +1,8 @@
+/public
+node_modules
+frontend/.next
+.env
+.vscode
+__pycache__
+venv
+

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+[data-theme="dark"] {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Dark theme classes for Tailwind compatibility */
+.dark {
+  color-scheme: dark;
+}
+
+/* Scrollbar utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar for dark theme */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Monaco Editor improvements */
+.monaco-editor {
+  --vscode-editor-background: transparent !important;
+}
+
+/* Custom utility classes */
+.dark-800 { background-color: #1f2937; }
+.dark-700 { background-color: #374151; }
+.dark-600 { background-color: #4b5563; }
+.dark-500 { background-color: #6b7280; }
+.dark-400 { background-color: #9ca3af; }
+.dark-300 { background-color: #d1d5db; }
+.dark-200 { background-color: #e5e7eb; }
+.dark-100 { background-color: #f3f4f6; }
+.dark-900 { background-color: #111827; }
